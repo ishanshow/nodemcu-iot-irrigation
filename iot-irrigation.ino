@@ -10,7 +10,6 @@ void setup() {
   // initialize the ESP8266 NodeMCU's pin as an input
   pinMode(SENSOR_PIN, INPUT);
   pinMode(MOTOR_PIN, OUTPUT); 
- // digitalWrite(MOTOR_PIN, LOW);
 }
 
 void loop() {
