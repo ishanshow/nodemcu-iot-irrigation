@@ -14,7 +14,6 @@ void setup() {
 
 void loop() {
   // read the state of the the input pin:
-  
   touch_state = digitalRead(SENSOR_PIN);
   if(prev_state == LOW && touch_state == HIGH) {
     Serial.println("The sensor is touched");
@@ -24,7 +23,6 @@ void loop() {
     Serial.println("The sensor is released");
     digitalWrite(MOTOR_PIN, LOW);
   }
-
   // save the the last state
   prev_state = touch_state;
 }
