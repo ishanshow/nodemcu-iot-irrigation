@@ -9,6 +9,7 @@ void setup() {
   Serial.begin(115200);
   // initialize the ESP8266 NodeMCU's pin as an input
   pinMode(SENSOR_PIN, INPUT);
+  // initialize the Relay Module's pin as an output
   pinMode(MOTOR_PIN, OUTPUT); 
 }
 
