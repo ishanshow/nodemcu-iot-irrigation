@@ -2,7 +2,7 @@ const int SENSOR_PIN = 13;
 const int MOTOR_PIN = 4;
 int prev_state = LOW;  // The previous state from the input pin
 int touch_state;     // The current reading from the input pin
-int flag=0;
+int is_on=0;
 
 void setup() {
   // Initialize the Serial to communicate with the Serial Monitor.
@@ -16,15 +16,15 @@ void loop() {
   // read the state of the the input pin:
   
   touch_state = digitalRead(SENSOR_PIN);
-  if(touch_state == HIGH && flag==0) {
-    Serial.println("Motor switched on");
-    flag=1;
+  if(touch_state == HIGH && is_on==0) {
     digitalWrite(MOTOR_PIN, HIGH); 
+    is_on=1;
+    Serial.println("Motor switched on");
     delay(1000);
   }
-  if(digitalRead(SENSOR_PIN)==HIGH && flag==1) {
+  if(digitalRead(SENSOR_PIN)==HIGH && is_on==1) {
     digitalWrite(MOTOR_PIN, LOW); 
-    flag=0;
+    is_on=0;
     Serial.println("Motor switched off");
     delay(1000);
   }
