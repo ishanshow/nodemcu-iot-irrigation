@@ -7,6 +7,7 @@ int is_on=0;
 void setup() {
   // Initialize the Serial to communicate with the Serial Monitor.
   Serial.begin(115200);
+  WiFi.mode(WIFI_OFF);
   // initialize the ESP8266 NodeMCU's pin as an input
   pinMode(SENSOR_PIN, INPUT);
   // initialize the Motor's pin as an output
