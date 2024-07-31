@@ -1,3 +1,5 @@
+#include <ESP8266WiFi.h>
+
 const int SENSOR_PIN = 13;
 const int MOTOR_PIN = 4;
 int prev_state = LOW;  // The previous state from the input pin
