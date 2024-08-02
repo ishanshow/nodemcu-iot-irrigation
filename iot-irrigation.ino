@@ -18,7 +18,6 @@ void setup() {
 
 void loop() {
   // read the state of the the input pin:
-  
   touch_state = digitalRead(SENSOR_PIN);
   if(touch_state == HIGH && is_on==0) {
     digitalWrite(MOTOR_PIN, HIGH); 
