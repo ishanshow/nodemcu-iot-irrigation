@@ -17,8 +17,8 @@ void setup() {
 
 void loop() {
   // Read the state of the the input pin:
-  touch_state = digitalRead(SENSOR_PIN);
-  if(touch_state == HIGH && is_on==0) {
+  touch_state = HIGH;
+  if(digitalRead(SENSOR_PIN) == HIGH && is_on==0) {
     digitalWrite(MOTOR_PIN, HIGH); 
     is_on=1;
     Serial.println("Motor switched on");
