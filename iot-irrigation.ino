@@ -16,7 +16,6 @@ void setup() {
 }
 
 void loop() {
-  // Read the state of the the input pin:
   if(digitalRead(SENSOR_PIN) == HIGH && is_on==0) {
     digitalWrite(MOTOR_PIN, HIGH); 
     is_on=1;
