@@ -6,7 +6,7 @@ int touch_state;     // The current reading from the input pin.
 int is_on=0;     // On/Off Flag.
 
 void setup() {
-  // Initialize the Serial to communicate with the Serial Monitor.
+  // Initialize the Serial to communicate with the Serial Monitor
   Serial.begin(115200);
   WiFi.mode(WIFI_OFF);
   // Initialize the ESP8266 NodeMCU's pin as an input.
