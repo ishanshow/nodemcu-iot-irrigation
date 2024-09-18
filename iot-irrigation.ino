@@ -11,7 +11,7 @@ void setup() {
   WiFi.mode(WIFI_OFF);
   // Initialize the ESP8266 NodeMCU's pin as an input.
   pinMode(SENSOR_PIN, INPUT);
-  // Initialize the Motor's pin as an output
+  // Initialize the Motor's pin as an output.
   pinMode(MOTOR_PIN, OUTPUT); 
 }
 
