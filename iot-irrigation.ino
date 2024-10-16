@@ -2,7 +2,7 @@
 
 const int SENSOR_PIN = 13;
 const int MOTOR_PIN = 4;
-int touch_state;     // The current reading from the input pin.
+int touch_state;     // The current reading from the input pin
 int is_on=0;     // On/Off Flag.
 
 void setup() {
